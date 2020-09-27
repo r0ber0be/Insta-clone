@@ -5,10 +5,10 @@
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 14px;
 }
 
 body {
+  font-size: 14px;
   width: 100%;
   min-height: 100vh;
   background-color: rgb(243, 243, 243);
@@ -19,7 +19,6 @@ body {
 }
 
 .instagram-wrapper {
-  display: flex;
   align-items: center;
   justify-content: start;
   width: 60%;
@@ -27,7 +26,7 @@ body {
 }
 
 .instagram-phone {
-  display: flex;
+  float: left;
   align-items: center;
   justify-content: center;
   width: 50%;
@@ -38,7 +37,8 @@ body {
 }
 
 .instagram-continue {
-  display: flex;
+  margin-top: 25px;
+  float: right;
   align-items: center; /*horizontal*/
   justify-content: space-around; /*vertical*/
   flex-direction: column;
@@ -47,6 +47,7 @@ body {
 }
 
 .group {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,6 +131,13 @@ body {
   background-image: url("imagens/play.png");
 }
 
+.instagram-footer {
+  clear: both;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+
 .instagram-footer-menu {
   display: flex;
   text-transform: uppercase;
@@ -137,18 +145,11 @@ body {
 }
 
 li.insta-item {
-  float: left;
   padding: 20px 10px 0 10px;
 }
 
-.instagram-footer {
-  width: 200%;
-  align-items: content;
-  text-align: right;
-}
-
 .copyright {
-  font-size: 12px;
+  margin-top: 10px;
   color: rgb(160, 160, 160);
 }
 
@@ -164,6 +165,7 @@ li.insta-item {
   }
 
   .group {
+    margin-top: 10px;
     border: 1px solid transparent;
   }
 
@@ -177,5 +179,9 @@ li.insta-item {
 
   .instagram-continue {
     width: 100%;
+  }
+
+  .instagram-footer-menu {
+    display: none;
   }
 }
